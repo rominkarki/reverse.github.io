@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reverese</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #3b5998;
+			color: white;
+			padding-top: 25%;
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2 style="text-align: center;">Reverse the string in real time with decrementing for loop</h2>
+	<div class="text-center">
+	<input type="text" name="" id="reverseTheName" onkeyup="reverseString()" class="w-100">
+	<br><br>
+	<input type="text" name="" id="showData" class="w-100">
+	</div>
+
+	<script type="text/javascript">
+		function reverseString () {
+			var str = document.getElementById('reverseTheName').value;
+			var newString = "";
+
+			for (var i = str.length-1; i >=0; i--){
+				newString = newString + str[i];
+			}
+			document.getElementById('showData').value = newString;
+			
+		}
+	</script>
+
+</body>
+</html>
